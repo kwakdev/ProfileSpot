@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and User Profile Update</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div id="loginSection">
+        <h2>Login Form</h2>
+        <form id="loginForm" onsubmit="event.preventDefault(); login();">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span id="loginError" class="error hidden"></span>
+            <button type="submit">Login</button>
+        </form>
+        <button type="button" onclick="showCreateAccount()">Create New Account</button>
+    </div>
+
+    <div id="createAccountSection" class="hidden">
+        <h2>Create Account</h2>
+        <form id="createAccountForm" onsubmit="event.preventDefault(); createAccount();">
+            <label for="newUsername">Username:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+            <span id="createAccountError" class="error hidden"></span>
+            <button type="submit">Next</button>
+        </form>
+    </div>
+
+    <div id="addUserSection" class="hidden">
+        <h2>Add New User</h2>
+        <form id="addUserForm" onsubmit="event.preventDefault(); addNewUser();">
+            <label for="newFirstName">First Name:</label>
+            <input type="text" id="newFirstName" name="newFirstName" required>
+            <label for="newLastName">Last Name:</label>
+            <input type="text" id="newLastName" name="newLastName" required>
+            <label for="newPhone">Phone:</label>
+            <input type="tel" id="newPhone" name="newPhone">
+            <label for="newAddressLine">Address Line:</label>
+            <input type="text" id="newAddressLine" name="newAddressLine">
+            <label for="newCity">City:</label>
+            <input type="text" id="newCity" name="newCity">
+            <label for="newEmail">Email:</label>
+            <input type="email" id="newEmail" name="newEmail" required>
+            <label for="newProvince">Province:</label>
+            <input type="text" id="newProvince" name="newProvince">
+            <label for="newPostalCode">Postal Code:</label>
+            <input type="text" id="newPostalCode" name="newPostalCode">
+           
+            <label for="newIsAdmin">Is Admin:</label>
+            <input type="checkbox" id="newIsAdmin" name="newIsAdmin">
+            <span id="addUserError" class="error hidden"></span>
+            <button type="submit">Add User</button>
+        </form>
+    </div>
+
+    <div id="profileInfo" class="hidden">
+        <h2>User Profile Update</h2>
+        <form id="updateForm" onsubmit="event.preventDefault(); updateUserProfile();">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone">
+            <label for="addressLine">Address Line:</label>
+            <input type="text" id="addressLine" name="addressLine">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="province">Province:</label>
+            <input type="text" id="province" name="province">
+            <label for="postalCode">Postal Code:</label>
+            <input type="text" id="postalCode" name="postalCode">
+           
+            <label for="createdAt">Created At:</label>
+            <input type="text" id="createdAt" name="createdAt" disabled>
+            <label for="isAdmin">Is Admin:</label>
+            <input type="checkbox" id="isAdmin" name="isAdmin">
+            <span id="updateError" class="error hidden"></span>
+            <button type="submit">Update Profile</button>
+            <button type="button" onclick="deleteUserProfile()">Delete Profile</button>
+        </form>
+    </div>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

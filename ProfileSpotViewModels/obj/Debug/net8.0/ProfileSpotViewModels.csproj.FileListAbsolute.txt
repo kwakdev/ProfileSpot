@@ -1,0 +1,15 @@
+C:\Users\evank\Documents\Scoo\coop\personalProjects\ProfileSpot\ProfileSpot\ProfileSpotViewModels\bin\Debug\net8.0\ProfileSpotViewModels.deps.json
+C:\Users\evank\Documents\Scoo\coop\personalProjects\ProfileSpot\ProfileSpot\ProfileSpotViewModels\bin\Debug\net8.0\ProfileSpotViewModels.dll
+C:\Users\evank\Documents\Scoo\coop\personalProjects\ProfileSpot\ProfileSpot\ProfileSpotViewModels\bin\Debug\net8.0\ProfileSpotViewModels.pdb
+C:\Users\evank\Documents\Scoo\coop\personalProjects\ProfileSpot\ProfileSpot\ProfileSpotViewModels\bin\Debug\net8.0\ProfileSpotDAL.dll
+C:\Users\evank\Documents\Scoo\coop\personalProjects\ProfileSpot\ProfileSpot\ProfileSpotViewModels\bin\Debug\net8.0\ProfileSpotDAL.pdb
+C:\Users\evank\Documents\Scoo\coop\personalProjects\ProfileSpot\ProfileSpot\ProfileSpotViewModels\obj\Debug\net8.0\ProfileSpotViewModels.csproj.AssemblyReference.cache
+C:\Users\evank\Documents\Scoo\coop\personalProjects\ProfileSpot\ProfileSpot\ProfileSpotViewModels\obj\Debug\net8.0\ProfileSpotViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\evank\Documents\Scoo\coop\personalProjects\ProfileSpot\ProfileSpot\ProfileSpotViewModels\obj\Debug\net8.0\ProfileSpotViewModels.AssemblyInfoInputs.cache
+C:\Users\evank\Documents\Scoo\coop\personalProjects\ProfileSpot\ProfileSpot\ProfileSpotViewModels\obj\Debug\net8.0\ProfileSpotViewModels.AssemblyInfo.cs
+C:\Users\evank\Documents\Scoo\coop\personalProjects\ProfileSpot\ProfileSpot\ProfileSpotViewModels\obj\Debug\net8.0\ProfileSpotViewModels.csproj.CoreCompileInputs.cache
+C:\Users\evank\Documents\Scoo\coop\personalProjects\ProfileSpot\ProfileSpot\ProfileSpotViewModels\obj\Debug\net8.0\ProfileS.81D1F545.Up2Date
+C:\Users\evank\Documents\Scoo\coop\personalProjects\ProfileSpot\ProfileSpot\ProfileSpotViewModels\obj\Debug\net8.0\ProfileSpotViewModels.dll
+C:\Users\evank\Documents\Scoo\coop\personalProjects\ProfileSpot\ProfileSpot\ProfileSpotViewModels\obj\Debug\net8.0\refint\ProfileSpotViewModels.dll
+C:\Users\evank\Documents\Scoo\coop\personalProjects\ProfileSpot\ProfileSpot\ProfileSpotViewModels\obj\Debug\net8.0\ProfileSpotViewModels.pdb
+C:\Users\evank\Documents\Scoo\coop\personalProjects\ProfileSpot\ProfileSpot\ProfileSpotViewModels\obj\Debug\net8.0\ref\ProfileSpotViewModels.dll

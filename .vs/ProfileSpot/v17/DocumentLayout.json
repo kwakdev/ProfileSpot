@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D7C5F9-1997-4C6A-A635-22CC087B2C3F}|ProfileSpotWebsite\\ProfileSpotWebsite.csproj|c:\\users\\evank\\videos\\git\\profilespot\\profilespotwebsite\\wwwroot\\html\\profilespot.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0D7C5F9-1997-4C6A-A635-22CC087B2C3F}|ProfileSpotWebsite\\ProfileSpotWebsite.csproj|solutionrelative:profilespotwebsite\\wwwroot\\html\\profilespot.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProfileSpot.html",
+              "DocumentMoniker": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotWebsite\\wwwroot\\html\\ProfileSpot.html",
+              "RelativeDocumentMoniker": "ProfileSpotWebsite\\wwwroot\\html\\ProfileSpot.html",
+              "ToolTip": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotWebsite\\wwwroot\\html\\ProfileSpot.html",
+              "RelativeToolTip": "ProfileSpotWebsite\\wwwroot\\html\\ProfileSpot.html",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFAAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-09T19:45:29.852Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
