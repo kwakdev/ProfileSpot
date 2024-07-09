@@ -15,5 +15,5 @@ Users will soon be able to edit their profiles directly through the website.
 
 ## Contact
 
-For any questions or feedback, please feel free to reach out to us at [kwakdev03@gmail.com].
+For any questions or feedback, please feel free to reach out to me at [kwakdev03@gmail.com].
 
