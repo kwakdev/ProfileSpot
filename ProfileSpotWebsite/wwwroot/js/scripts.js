@@ -138,7 +138,6 @@ async function addNewUser() {
         email: document.getElementById("newEmail").value,
         province: document.getElementById("newProvince").value,
         postalCode: document.getElementById("newPostalCode").value,
-        dateOfBirth: document.getElementById("newDateOfBirth").value,
         isAdmin: document.getElementById("newIsAdmin").checked,
     };
 
