@@ -1,3 +1,5 @@
+## NOTE
+If testing my website, if you get error after a few seconds "An error occurred: Connection Timeout Expired. The timeout period elapsed during the post-login phase" wait a few minutes for the azure server to resume as I am using a free subscription.
 
 
 ## Upcoming Updates
