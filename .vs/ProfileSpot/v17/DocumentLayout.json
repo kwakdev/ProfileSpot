@@ -3,8 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B0D7C5F9-1997-4C6A-A635-22CC087B2C3F}|ProfileSpotWebsite\\ProfileSpotWebsite.csproj|c:\\users\\evank\\videos\\git\\profilespot\\profilespotwebsite\\wwwroot\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B0D7C5F9-1997-4C6A-A635-22CC087B2C3F}|ProfileSpotWebsite\\ProfileSpotWebsite.csproj|solutionrelative:profilespotwebsite\\wwwroot\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B0D7C5F9-1997-4C6A-A635-22CC087B2C3F}|ProfileSpotWebsite\\ProfileSpotWebsite.csproj|c:\\users\\evank\\videos\\git\\profilespot\\profilespotwebsite\\wwwroot\\html\\profilespot.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B0D7C5F9-1997-4C6A-A635-22CC087B2C3F}|ProfileSpotWebsite\\ProfileSpotWebsite.csproj|solutionrelative:profilespotwebsite\\wwwroot\\html\\profilespot.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A68DDA86-A990-4A93-AC52-EF0363703BE0}|ProfileSpotViewModels\\ProfileSpotViewModel.csproj|c:\\users\\evank\\videos\\git\\profilespot\\profilespotviewmodels\\userloginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A68DDA86-A990-4A93-AC52-EF0363703BE0}|ProfileSpotViewModels\\ProfileSpotViewModel.csproj|solutionrelative:profilespotviewmodels\\userloginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A68DDA86-A990-4A93-AC52-EF0363703BE0}|ProfileSpotViewModels\\ProfileSpotViewModel.csproj|c:\\users\\evank\\videos\\git\\profilespot\\profilespotviewmodels\\userprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A68DDA86-A990-4A93-AC52-EF0363703BE0}|ProfileSpotViewModels\\ProfileSpotViewModel.csproj|solutionrelative:profilespotviewmodels\\userprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82A642FC-B2EF-4BC5-BBD9-B08BE60944F8}|ProfileSpotDAL\\ProfileSpotDAL.csproj|c:\\users\\evank\\videos\\git\\profilespot\\profilespotdal\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82A642FC-B2EF-4BC5-BBD9-B08BE60944F8}|ProfileSpotDAL\\ProfileSpotDAL.csproj|solutionrelative:profilespotdal\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82A642FC-B2EF-4BC5-BBD9-B08BE60944F8}|ProfileSpotDAL\\ProfileSpotDAL.csproj|c:\\users\\evank\\videos\\git\\profilespot\\profilespotdal\\userlogindao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82A642FC-B2EF-4BC5-BBD9-B08BE60944F8}|ProfileSpotDAL\\ProfileSpotDAL.csproj|solutionrelative:profilespotdal\\userlogindao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82A642FC-B2EF-4BC5-BBD9-B08BE60944F8}|ProfileSpotDAL\\ProfileSpotDAL.csproj|c:\\users\\evank\\videos\\git\\profilespot\\profilespotdal\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82A642FC-B2EF-4BC5-BBD9-B08BE60944F8}|ProfileSpotDAL\\ProfileSpotDAL.csproj|solutionrelative:profilespotdal\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82A642FC-B2EF-4BC5-BBD9-B08BE60944F8}|ProfileSpotDAL\\ProfileSpotDAL.csproj|c:\\users\\evank\\videos\\git\\profilespot\\profilespotdal\\updatestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82A642FC-B2EF-4BC5-BBD9-B08BE60944F8}|ProfileSpotDAL\\ProfileSpotDAL.csproj|solutionrelative:profilespotdal\\updatestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82A642FC-B2EF-4BC5-BBD9-B08BE60944F8}|ProfileSpotDAL\\ProfileSpotDAL.csproj|c:\\users\\evank\\videos\\git\\profilespot\\profilespotdal\\profilespotcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82A642FC-B2EF-4BC5-BBD9-B08BE60944F8}|ProfileSpotDAL\\ProfileSpotDAL.csproj|solutionrelative:profilespotdal\\profilespotcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82A642FC-B2EF-4BC5-BBD9-B08BE60944F8}|ProfileSpotDAL\\ProfileSpotDAL.csproj|c:\\users\\evank\\videos\\git\\profilespot\\profilespotdal\\profiledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82A642FC-B2EF-4BC5-BBD9-B08BE60944F8}|ProfileSpotDAL\\ProfileSpotDAL.csproj|solutionrelative:profilespotdal\\profiledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82A642FC-B2EF-4BC5-BBD9-B08BE60944F8}|ProfileSpotDAL\\ProfileSpotDAL.csproj|c:\\users\\evank\\videos\\git\\profilespot\\profilespotdal\\profilespotdal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{82A642FC-B2EF-4BC5-BBD9-B08BE60944F8}|ProfileSpotDAL\\ProfileSpotDAL.csproj|solutionrelative:profilespotdal\\profilespotdal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +54,147 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserProfileViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotViewModels\\UserProfileViewModel.cs",
+              "RelativeDocumentMoniker": "ProfileSpotViewModels\\UserProfileViewModel.cs",
+              "ToolTip": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotViewModels\\UserProfileViewModel.cs",
+              "RelativeToolTip": "ProfileSpotViewModels\\UserProfileViewModel.cs",
+              "ViewState": "AQIAAOMAAAAAAAAAAAAqwDIBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T18:28:08.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserLoginDAO.cs",
+              "DocumentMoniker": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotDAL\\UserLoginDAO.cs",
+              "RelativeDocumentMoniker": "ProfileSpotDAL\\UserLoginDAO.cs",
+              "ToolTip": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotDAL\\UserLoginDAO.cs",
+              "RelativeToolTip": "ProfileSpotDAL\\UserLoginDAO.cs",
+              "ViewState": "AQIAAJEAAAAAAAAAAAAQwLEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T18:25:34.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserLogin.cs",
+              "DocumentMoniker": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotDAL\\UserLogin.cs",
+              "RelativeDocumentMoniker": "ProfileSpotDAL\\UserLogin.cs",
+              "ToolTip": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotDAL\\UserLogin.cs",
+              "RelativeToolTip": "ProfileSpotDAL\\UserLogin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T18:25:31.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProfileDAO.cs",
+              "DocumentMoniker": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotDAL\\ProfileDAO.cs",
+              "RelativeDocumentMoniker": "ProfileSpotDAL\\ProfileDAO.cs",
+              "ToolTip": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotDAL\\ProfileDAO.cs",
+              "RelativeToolTip": "ProfileSpotDAL\\ProfileDAO.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAiwDoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T18:22:20.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProfileSpotContext.cs",
+              "DocumentMoniker": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotDAL\\ProfileSpotContext.cs",
+              "RelativeDocumentMoniker": "ProfileSpotDAL\\ProfileSpotContext.cs",
+              "ToolTip": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotDAL\\ProfileSpotContext.cs",
+              "RelativeToolTip": "ProfileSpotDAL\\ProfileSpotContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T18:22:07.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UpdateStatus.cs",
+              "DocumentMoniker": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotDAL\\UpdateStatus.cs",
+              "RelativeDocumentMoniker": "ProfileSpotDAL\\UpdateStatus.cs",
+              "ToolTip": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotDAL\\UpdateStatus.cs",
+              "RelativeToolTip": "ProfileSpotDAL\\UpdateStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T18:22:00.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotDAL\\UserProfile.cs",
+              "RelativeDocumentMoniker": "ProfileSpotDAL\\UserProfile.cs",
+              "ToolTip": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotDAL\\UserProfile.cs",
+              "RelativeToolTip": "ProfileSpotDAL\\UserProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T18:21:58.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProfileSpotDAL",
+              "DocumentMoniker": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotDAL\\ProfileSpotDAL.csproj",
+              "RelativeDocumentMoniker": "ProfileSpotDAL\\ProfileSpotDAL.csproj",
+              "ToolTip": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotDAL\\ProfileSpotDAL.csproj",
+              "RelativeToolTip": "ProfileSpotDAL\\ProfileSpotDAL.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-12T18:21:56.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserLoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotViewModels\\UserLoginViewModel.cs",
+              "RelativeDocumentMoniker": "ProfileSpotViewModels\\UserLoginViewModel.cs",
+              "ToolTip": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotViewModels\\UserLoginViewModel.cs",
+              "RelativeToolTip": "ProfileSpotViewModels\\UserLoginViewModel.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAqwNcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T18:21:36.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "scripts.js",
+              "DocumentMoniker": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotWebsite\\wwwroot\\js\\scripts.js",
+              "RelativeDocumentMoniker": "ProfileSpotWebsite\\wwwroot\\js\\scripts.js",
+              "ToolTip": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotWebsite\\wwwroot\\js\\scripts.js",
+              "RelativeToolTip": "ProfileSpotWebsite\\wwwroot\\js\\scripts.js",
+              "ViewState": "AQIAALAAAAAAAAAAAAAAwLUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-10T14:02:51.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ProfileSpot.html",
               "DocumentMoniker": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotWebsite\\wwwroot\\html\\ProfileSpot.html",
               "RelativeDocumentMoniker": "ProfileSpotWebsite\\wwwroot\\html\\ProfileSpot.html",
               "ToolTip": "C:\\Users\\evank\\Videos\\git\\ProfileSpot\\ProfileSpotWebsite\\wwwroot\\html\\ProfileSpot.html",
               "RelativeToolTip": "ProfileSpotWebsite\\wwwroot\\html\\ProfileSpot.html",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFAAAAALAAAA",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAAAFAAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-07-09T19:45:29.852Z",
               "EditorCaption": ""

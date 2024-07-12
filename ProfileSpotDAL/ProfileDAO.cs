@@ -11,14 +11,18 @@ namespace ProfileSpotDAL
 {
     public class ProfileDAO
     {
+        /// <summary>
+        /// Retrieves a user profile by last name.
+        /// </summary>
+        /// <param name="name">The last name of the user.</param>
+        /// <returns>A UserProfile object if found; otherwise, null.</returns>
         public async Task<UserProfile> GetByLastname(string name)
         {
             UserProfile? selectedUser;
             try
             {
                 ProfileSpotContext _db = new();
-                selectedUser = await _db.UserProfiles.FirstOrDefaultAsync(usr => usr.LastName ==
-               name);
+                selectedUser = await _db.UserProfiles.FirstOrDefaultAsync(usr => usr.LastName == name);
             }
             catch (Exception ex)
             {
@@ -29,6 +33,11 @@ namespace ProfileSpotDAL
             return selectedUser!;
         }
 
+        /// <summary>
+        /// Retrieves a user profile by ID.
+        /// </summary>
+        /// <param name="id">The ID of the user.</param>
+        /// <returns>A UserProfile object if found; otherwise, null.</returns>
         public async Task<UserProfile> GetById(int id)
         {
             UserProfile? selectedUser;
@@ -36,7 +45,6 @@ namespace ProfileSpotDAL
             {
                 ProfileSpotContext _db = new();
                 selectedUser = await _db.UserProfiles.FindAsync(id);
-            
             }
             catch (Exception ex)
             {
@@ -46,6 +54,11 @@ namespace ProfileSpotDAL
             }
             return selectedUser!;
         }
+
+        /// <summary>
+        /// Retrieves all user profiles.
+        /// </summary>
+        /// <returns>A list of all UserProfile objects.</returns>
         public async Task<List<UserProfile>> GetAll()
         {
             List<UserProfile> allUsers;
@@ -62,6 +75,12 @@ namespace ProfileSpotDAL
             }
             return allUsers;
         }
+
+        /// <summary>
+        /// Adds a new user profile.
+        /// </summary>
+        /// <param name="newUser">The UserProfile object to add.</param>
+        /// <returns>The ID of the newly added user profile.</returns>
         public async Task<int> Add(UserProfile newUser)
         {
             try
@@ -78,6 +97,12 @@ namespace ProfileSpotDAL
             }
             return newUser.UserId;
         }
+
+        /// <summary>
+        /// Updates an existing user profile.
+        /// </summary>
+        /// <param name="updatedUser">The updated UserProfile object.</param>
+        /// <returns>An UpdateStatus indicating the result of the update operation.</returns>
         public async Task<UpdateStatus> Update(UserProfile updatedUser)
         {
             UpdateStatus status = UpdateStatus.Failed;
@@ -90,7 +115,7 @@ namespace ProfileSpotDAL
                 if (await _db.SaveChangesAsync() == 1)
                 {
                     status = UpdateStatus.Ok;
-                }// should return 1
+                } // should return 1
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -104,14 +129,19 @@ namespace ProfileSpotDAL
             }
             return status;
         }
-      
+
+        /// <summary>
+        /// Deletes a user profile by ID.
+        /// </summary>
+        /// <param name="id">The ID of the user profile to delete.</param>
+        /// <returns>The number of state entries written to the database.</returns>
         public async Task<int> Delete(int id)
         {
             try
             {
                 ProfileSpotContext _dbContext = new();
 
-                // Retrieve the entity by id
+                // Retrieve the entity by ID
                 var entity = await _dbContext.UserProfiles.FindAsync(id);
 
                 if (entity != null)
@@ -133,8 +163,5 @@ namespace ProfileSpotDAL
                 throw;
             }
         }
-
     }
-
 }
-

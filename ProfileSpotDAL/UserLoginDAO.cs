@@ -9,6 +9,11 @@ namespace ProfileSpotDAL
 {
     public class UserLoginDAO
     {
+        /// <summary>
+        /// Retrieves a user login by username.
+        /// </summary>
+        /// <param name="username">The username of the user login.</param>
+        /// <returns>A UserLogin object if found; otherwise, null.</returns>
         public async Task<UserLogin> GetByUsername(string username)
         {
             UserLogin? selectedUserLogin;
@@ -26,6 +31,11 @@ namespace ProfileSpotDAL
             return selectedUserLogin!;
         }
 
+        /// <summary>
+        /// Retrieves a user login by ID.
+        /// </summary>
+        /// <param name="id">The ID of the user login.</param>
+        /// <returns>A UserLogin object if found; otherwise, null.</returns>
         public async Task<UserLogin> GetById(int? id)
         {
             UserLogin? selectedUserLogin;
@@ -42,6 +52,13 @@ namespace ProfileSpotDAL
             }
             return selectedUserLogin!;
         }
+
+        /// <summary>
+        /// Retrieves a user login by username and password.
+        /// </summary>
+        /// <param name="username">The username of the user login.</param>
+        /// <param name="password">The password of the user login.</param>
+        /// <returns>A UserLogin object if found; otherwise, null.</returns>
         public async Task<UserLogin?> GetByUsernameAndPassword(string username, string password)
         {
             try
@@ -58,6 +75,11 @@ namespace ProfileSpotDAL
                 throw;
             }
         }
+
+        /// <summary>
+        /// Retrieves all user logins.
+        /// </summary>
+        /// <returns>A list of all UserLogin objects.</returns>
         public async Task<List<UserLogin>> GetAll()
         {
             List<UserLogin> allUserLogins;
@@ -75,6 +97,11 @@ namespace ProfileSpotDAL
             return allUserLogins;
         }
 
+        /// <summary>
+        /// Adds a new user login.
+        /// </summary>
+        /// <param name="newUserLogin">The UserLogin object to add.</param>
+        /// <returns>The ID of the newly added user login.</returns>
         public async Task<int> Add(UserLogin newUserLogin)
         {
             try
@@ -92,6 +119,11 @@ namespace ProfileSpotDAL
             return newUserLogin.LoginId;
         }
 
+        /// <summary>
+        /// Updates an existing user login.
+        /// </summary>
+        /// <param name="updatedUserLogin">The updated UserLogin object.</param>
+        /// <returns>An UpdateStatus indicating the result of the update operation.</returns>
         public async Task<UpdateStatus> Update(UserLogin updatedUserLogin)
         {
             UpdateStatus status = UpdateStatus.Failed;
@@ -118,6 +150,11 @@ namespace ProfileSpotDAL
             return status;
         }
 
+        /// <summary>
+        /// Deletes a user login by ID.
+        /// </summary>
+        /// <param name="id">The ID of the user login to delete.</param>
+        /// <returns>The number of state entries written to the database.</returns>
         public async Task<int> Delete(int? id)
         {
             int usersDeleted = -1;

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProfileSpotWebsite")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5531f0c103919ebe24e1675bb19539bbf687df02")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86f82fb76a204ae07aa03e7894ebf1a9afd97f4f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProfileSpotWebsite")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProfileSpotWebsite")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

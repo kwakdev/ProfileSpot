@@ -6,11 +6,12 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using ProfileSpotDAL;
+
 namespace ProfileSpotViewModels
 {
     public class UserProfileViewModel
     {
-        readonly private ProfileDAO _dao;
+        private readonly ProfileDAO _dao;
         public int UserId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -22,27 +23,26 @@ namespace ProfileSpotViewModels
         public string? PostalCode { get; set; }
         public DateOnly? DateOfBirth { get; set; }
         public string? Timer { get; set; }
-
         public bool? IsAdmin { get; set; }
         public byte[]? Picture { get; set; }
         public DateTime? CreatedAt { get; set; }
-        // Additional properties as needed for the UI
-        public string? Picture64 { get; set; }
+        public string? Picture64 { get; set; } // Base64 string representation of the picture
         public int LoginId { get; set; }
 
-
-     
+        // Constructor initializes the DAO
         public UserProfileViewModel()
         {
-            _dao = new ProfileDAO(); 
+            _dao = new ProfileDAO();
         }
 
+        /// <summary>
+        /// Retrieves a user profile by last name and sets the ViewModel properties.
+        /// </summary>
         public async Task GetByLastname()
         {
             try
             {
                 UserProfile usr = await _dao.GetByLastname(LastName!);
-
                 FirstName = usr.FirstName;
                 LastName = usr.LastName;
                 Email = usr.Email;
@@ -57,7 +57,6 @@ namespace ProfileSpotViewModels
                 IsAdmin = usr.IsAdmin;
                 LoginId = usr.UserId;
 
-
                 if (usr.Picture != null)
                 {
                     Picture64 = Convert.ToBase64String(usr.Picture);
@@ -77,12 +76,15 @@ namespace ProfileSpotViewModels
                 throw;
             }
         }
+
+        /// <summary>
+        /// Retrieves a user profile by ID and sets the ViewModel properties.
+        /// </summary>
         public async Task GetByID()
         {
             try
             {
                 UserProfile usr = await _dao.GetById(UserId!);
-
                 FirstName = usr.FirstName;
                 LastName = usr.LastName;
                 Phone = usr.Phone;
@@ -96,7 +98,6 @@ namespace ProfileSpotViewModels
                 IsAdmin = usr.IsAdmin;
                 LoginId = usr.UserId;
 
-
                 if (usr.Picture != null)
                 {
                     Picture64 = Convert.ToBase64String(usr.Picture);
@@ -116,34 +117,40 @@ namespace ProfileSpotViewModels
                 throw;
             }
         }
+
+        /// <summary>
+        /// Retrieves all user profiles and returns them as a list of UserProfileViewModel.
+        /// </summary>
         public async Task<List<UserProfileViewModel>> GetAll()
         {
             List<UserProfileViewModel> allVms = new();
             try
             {
                 List<UserProfile> allUsers = await _dao.GetAll();
-                
                 foreach (UserProfile usr in allUsers)
                 {
                     UserProfileViewModel usrVm = new()
                     {
                         FirstName = usr.FirstName,
-                    LastName = usr.LastName,
-                    Phone = usr.Phone,
-                    AddressLine = usr.AddressLine,
-                    City = usr.City,
-                    Province = usr.Province,
-                    PostalCode = usr.PostalCode,
-                    UserId = usr.UserId,
-                    DateOfBirth = usr.DateOfBirth,
-                    CreatedAt = usr.CreatedAt,
-                    IsAdmin = usr.IsAdmin,
-                    LoginId = usr.UserId,
+                        LastName = usr.LastName,
+                        Phone = usr.Phone,
+                        AddressLine = usr.AddressLine,
+                        City = usr.City,
+                        Province = usr.Province,
+                        PostalCode = usr.PostalCode,
+                        UserId = usr.UserId,
+                        DateOfBirth = usr.DateOfBirth,
+                        CreatedAt = usr.CreatedAt,
+                        IsAdmin = usr.IsAdmin,
+                        LoginId = usr.UserId,
+                        Timer = Convert.ToBase64String(usr.Timer),
+                    };
 
+                    if (usr.Picture != null)
+                    {
+                        usrVm.Picture64 = Convert.ToBase64String(usr.Picture);
+                    }
 
-                 
-                    Timer = Convert.ToBase64String(usr.Timer),
-                };
                     allVms.Add(usrVm);
                 }
             }
@@ -155,13 +162,16 @@ namespace ProfileSpotViewModels
             }
             return allVms;
         }
+
+        /// <summary>
+        /// Adds a new user profile and returns the ID of the newly added user.
+        /// </summary>
         public async Task<int> Add()
         {
             try
             {
-                UserProfile stu = new()
+                UserProfile usr = new()
                 {
-                    // Do not set UserId here
                     FirstName = this.FirstName,
                     LastName = this.LastName,
                     Email = this.Email,
@@ -171,14 +181,13 @@ namespace ProfileSpotViewModels
                     Province = this.Province,
                     PostalCode = this.PostalCode,
                     DateOfBirth = this.DateOfBirth,
-                    
                     Timer = !string.IsNullOrEmpty(this.Timer) ? Convert.FromBase64String(this.Timer) : null,
                     IsAdmin = this.IsAdmin,
                     Picture = !string.IsNullOrEmpty(this.Picture64) ? Convert.FromBase64String(this.Picture64) : null,
                     CreatedAt = this.CreatedAt,
                 };
-                int userId = await _dao.Add(stu);
-                return userId; // Return the ID of the newly added user
+                int userId = await _dao.Add(usr);
+                return userId;
             }
             catch (Exception ex)
             {
@@ -188,6 +197,10 @@ namespace ProfileSpotViewModels
             }
         }
 
+        /// <summary>
+        /// Deletes a user profile by ID.
+        /// </summary>
+        /// <returns>The number of state entries written to the database.</returns>
         public async Task<int> Delete()
         {
             try
@@ -216,6 +229,10 @@ namespace ProfileSpotViewModels
             }
         }
 
+        /// <summary>
+        /// Updates an existing user profile.
+        /// </summary>
+        /// <returns>The status of the update operation.</returns>
         public async Task<int> Update()
         {
             int updateStatus;
@@ -223,21 +240,18 @@ namespace ProfileSpotViewModels
             {
                 UserProfile usr = new()
                 {
-
                     FirstName = FirstName,
                     LastName = LastName,
                     Phone = Phone,
                     AddressLine = AddressLine,
                     City = City,
                     Email = Email,
-
                     Province = Province,
                     PostalCode = PostalCode,
                     UserId = UserId,
                     DateOfBirth = DateOfBirth,
                     CreatedAt = CreatedAt,
                     IsAdmin = IsAdmin,
-
                     Picture = Picture64 != null ? Convert.FromBase64String(Picture64!) : null,
                     Timer = Convert.FromBase64String(Timer!)
                 };
@@ -252,43 +266,41 @@ namespace ProfileSpotViewModels
             }
             return updateStatus;
         }
+
+        /// <summary>
+        /// Retrieves a user profile by ID and sets the ViewModel properties.
+        /// </summary>
+        /// <param name="userId">The ID of the user profile.</param>
         public async Task GetById(int userId)
-{
-    try
-    {
-        UserProfile usr = await _dao.GetById(userId);
-
-        FirstName = usr.FirstName;
-        LastName = usr.LastName;
-        Email = usr.Email;
-        Phone = usr.Phone;
-        AddressLine = usr.AddressLine;
-        City = usr.City;
-        Province = usr.Province;
-        PostalCode = usr.PostalCode;
-        DateOfBirth = usr.DateOfBirth;
-        CreatedAt = usr.CreatedAt;
-        IsAdmin = usr.IsAdmin;
-        LoginId = usr.UserId;
-
-        if (usr.Picture != null)
         {
-            Picture64 = Convert.ToBase64String(usr.Picture);
+            try
+            {
+                UserProfile usr = await _dao.GetById(userId);
+                FirstName = usr.FirstName;
+                LastName = usr.LastName;
+                Email = usr.Email;
+                Phone = usr.Phone;
+                AddressLine = usr.AddressLine;
+                City = usr.City;
+                Province = usr.Province;
+                PostalCode = usr.PostalCode;
+                DateOfBirth = usr.DateOfBirth;
+                CreatedAt = usr.CreatedAt;
+                IsAdmin = usr.IsAdmin;
+                LoginId = usr.UserId;
+
+                if (usr.Picture != null)
+                {
+                    Picture64 = Convert.ToBase64String(usr.Picture);
+                }
+                Timer = Convert.ToBase64String(usr.Timer);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Problem in " + GetType().Name + " " +
+                MethodBase.GetCurrentMethod()!.Name + " " + ex.Message);
+                throw;
+            }
         }
-        Timer = Convert.ToBase64String(usr.Timer);
-    }
-    catch (Exception ex)
-    {
-        Debug.WriteLine("Problem in " + GetType().Name + " " +
-        MethodBase.GetCurrentMethod()!.Name + " " + ex.Message);
-        throw;
     }
 }
-
-        
-
-    }
-
-}
-
-

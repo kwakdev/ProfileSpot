@@ -15,10 +15,18 @@ namespace ProfileSpotViewModels
         public string? Password { get; set; }
         public DateTime? LastLogin { get; set; }
 
+        // Constructor initializes the DAO
         public UserLoginViewModel()
         {
             _dao = new UserLoginDAO();
         }
+
+        /// <summary>
+        /// Retrieves a user login by username and password.
+        /// </summary>
+        /// <param name="username">The username of the user login.</param>
+        /// <param name="password">The password of the user login.</param>
+        /// <returns>A UserLogin object if found; otherwise, null.</returns>
         public async Task<UserLogin?> GetByUsernameAndPassword(string username, string password)
         {
             try
@@ -32,6 +40,10 @@ namespace ProfileSpotViewModels
                 throw;
             }
         }
+
+        /// <summary>
+        /// Retrieves a user login by username and sets the ViewModel properties.
+        /// </summary>
         public async Task GetByUsername()
         {
             try
@@ -57,6 +69,9 @@ namespace ProfileSpotViewModels
             }
         }
 
+        /// <summary>
+        /// Retrieves a user login by ID and sets the ViewModel properties.
+        /// </summary>
         public async Task GetByID()
         {
             try
@@ -82,6 +97,9 @@ namespace ProfileSpotViewModels
             }
         }
 
+        /// <summary>
+        /// Adds a new user login and sets the LoginId property.
+        /// </summary>
         public async Task Add()
         {
             LoginId = -1;
@@ -104,6 +122,10 @@ namespace ProfileSpotViewModels
             }
         }
 
+        /// <summary>
+        /// Updates an existing user login.
+        /// </summary>
+        /// <returns>The status of the update operation.</returns>
         public async Task<int> Update()
         {
             int updateStatus;
@@ -128,7 +150,12 @@ namespace ProfileSpotViewModels
             }
             return updateStatus;
         }
-        public async Task GetByID( int? ID)
+
+        /// <summary>
+        /// Retrieves a user login by ID and sets the ViewModel properties.
+        /// </summary>
+        /// <param name="ID">The ID of the user login.</param>
+        public async Task GetByID(int? ID)
         {
             try
             {
@@ -152,6 +179,11 @@ namespace ProfileSpotViewModels
                 throw;
             }
         }
+
+        /// <summary>
+        /// Deletes a user login by ID.
+        /// </summary>
+        /// <returns>The number of state entries written to the database.</returns>
         public async Task<int> Delete()
         {
             try
