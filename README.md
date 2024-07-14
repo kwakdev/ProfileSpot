@@ -1,5 +1,7 @@
 ## About
-Developed a . NET based profile management website. Users can register accounts or login to access and manage their personal information stored in an Azure database This project demonstrates proficiency in .NET development, Azure cloud services, database integration, and user-centric web application design.
+Developed a . NET based profile management website. Users can register accounts or login to access and manage their personal information stored in an Microsoft SQL Azure database This project demonstrates proficiency in .NET development, Azure cloud services, database integration, and user-centric web application design.
+
+
 
 
 ## NOTE
